@@ -1,0 +1,11 @@
+<div class="container">
+  <h5>Recomendados para ti</h5>
+  <div class="productRow row">
+    <div class="col-3 card" *ngFor="let product of products; let i = index">
+        <img src="{{ product.urlImage }}" alt="...">
+        <button class="btn btn-primary btnAddCart" type="button">Agregar a carrito</button>
+        {{ product.name }}
+        <h5> {{product.Price | currency}} </h5>
+    </div>
+  </div>
+</div>

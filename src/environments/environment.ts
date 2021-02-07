@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: "AIzaSyCqSJ_YmHt1MJ2hsHKEwzKSx-2aSNiYr2o",
+    authDomain: "florita-dev.firebaseapp.com",
+    databaseURL: "https://florita-dev-default-rtdb.firebaseio.com",
+    projectId: "florita-dev",
+    storageBucket: "florita-dev.appspot.com",
+    messagingSenderId: "319499658880",
+    appId: "1:319499658880:web:5b2697276dcbf8686c2865",
+    measurementId: "G-PNG5H2FM3S"
+  }
 };
 
 /*
