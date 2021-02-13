@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from "../product.service";
+import { CartService } from '../cart.service';
+import Product from "../models/Product";
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -11,14 +13,14 @@ export class ProductListComponent implements OnInit {
 
   products: any;
 
-  constructor(private productService:ProductService) {}
+  constructor(private productService:ProductService,
+              private cartService: CartService) {}
 
   ngOnInit(): void {
     this.retrieveTutorials()
   }
 
   retrieveTutorials(): void {
-
   this.productService.getAll().snapshotChanges().pipe(
     map(changes =>
       changes.map(c =>
@@ -29,6 +31,12 @@ export class ProductListComponent implements OnInit {
     this.products = data;
   });
 
+  }
+
+  addToCart(product: Product) {
+    debugger;
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
   }
 
 }

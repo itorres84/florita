@@ -13,11 +13,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 // Components
 import { ProductListComponent } from './product-list/product-list.component';
+import { ShoppingcartmodalComponent } from './shoppingcartmodal/shoppingcartmodal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    ShoppingcartmodalComponent
   ],
   imports: [
     BrowserModule,
