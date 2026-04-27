@@ -1,0 +1,47 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="90" fill="#FFF8F1"/>
+
+  <!-- círculo dorado con espacio para la rama -->
+  <circle
+    cx="256"
+    cy="256"
+    r="176"
+    fill="none"
+    stroke="#C79A6B"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-dasharray="760 345"
+    transform="rotate(-55 256 256)"
+  />
+
+  <!-- letra F -->
+  <text
+    x="190"
+    y="325"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="220"
+    font-weight="500"
+    fill="#123826"
+  >
+    F
+  </text>
+
+  <!-- rama curva siguiendo el círculo -->
+  <g
+    fill="none"
+    stroke="#D88991"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <!-- tallo -->
+    <path d="M330 380 C365 335 385 295 394 220" />
+
+    <!-- hojas -->
+    <path d="M350 350 C382 350 405 333 418 305 C386 302 362 315 350 350" />
+    <path d="M367 314 C340 302 329 278 337 248 C365 260 376 285 367 314" />
+    <path d="M386 270 C418 270 438 252 450 224 C418 222 397 238 386 270" />
+    <path d="M394 224 C374 204 374 174 394 150 C416 176 415 204 394 224" />
+    <path d="M338 378 C318 363 313 338 326 316 C347 333 350 356 338 378" />
+  </g>
+</svg>
