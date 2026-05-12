@@ -2,7 +2,8 @@ export default function Home() {
   const whatsappLink =
     "https://wa.me/525579261990?text=Hola%20quiero%20información%20sobre%20diseño%20floral";
 
-  const mapsLink = "https://www.google.com/maps?q=18.974963,-99.082237";
+  const mapsLink =
+    "https://www.google.com/maps?q=Tepoztl%C3%A1n%2C%20Morelos";
 
   const services = [
     "Bodas",
@@ -176,11 +177,12 @@ export default function Home() {
         <div className="mx-auto max-w-5xl">
           <div className="overflow-hidden rounded-2xl bg-[#d8cbb8] shadow-[0_24px_70px_rgba(24,21,18,0.12)]">
             <iframe
-                src="https://www.google.com/maps?q=18.974963,-99.082237&z=16&output=embed"
-                width="100%"
-                height="500"
-                style={{ border: 0 }}
-                loading="lazy"/>
+              src="https://www.google.com/maps?q=Tepoztl%C3%A1n%2C%20Morelos&z=13&output=embed"
+              width="100%"
+              height="500"
+              style={{ border: 0 }}
+              loading="lazy"
+            />
           </div>
           <a
             className="mt-6 inline-flex text-sm uppercase tracking-[0.22em] text-[#4d463d] transition duration-300 hover:text-[#181512]"
