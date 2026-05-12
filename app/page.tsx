@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   const whatsappLink =
     "https://wa.me/525579261990?text=Hola%20quiero%20información%20sobre%20diseño%20floral";
@@ -134,6 +136,52 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-[#f7f1e8] px-6 py-32 sm:px-10 lg:px-16 lg:py-40 xl:px-20">
+        <div className="mx-auto max-w-[90rem] border-t border-[#d9ccbb] pt-20 text-center">
+          <p className="text-xs uppercase tracking-[0.32em] text-[#6f7b5d]">
+            Colaboraciones
+          </p>
+          <h2 className="mx-auto mt-6 max-w-4xl font-serif text-5xl font-normal leading-[1.02] sm:text-6xl lg:text-7xl">
+            Espacios donde hemos colaborado
+          </h2>
+          <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-[#4d463d]">
+            A lo largo del tiempo hemos participado en montajes y detalles
+            florales para distintos espacios y eventos en Morelos.
+          </p>
+
+          <div className="mx-auto mt-20 grid max-w-5xl items-center justify-items-center gap-x-16 gap-y-14 sm:mt-24 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-20">
+            <Image
+              className="h-auto w-32 opacity-75 grayscale transition duration-500 ease-out hover:scale-105 hover:opacity-100 hover:grayscale-0 sm:w-40 lg:w-44"
+              src="/el-ciruelo.webp"
+              alt="El Ciruelo Restaurante"
+              width={500}
+              height={519}
+            />
+            <Image
+              className="h-auto w-32 opacity-75 grayscale transition duration-500 ease-out hover:scale-105 hover:opacity-100 hover:grayscale-0 sm:w-40 lg:w-44"
+              src="/gallaecialogo.png"
+              alt="Gallaecia"
+              width={480}
+              height={500}
+            />
+            <Image
+              className="h-auto w-32 opacity-75 grayscale transition duration-500 ease-out hover:scale-105 hover:opacity-100 hover:grayscale-0 sm:w-40 lg:w-44"
+              src="/jardinAbundancia.png"
+              alt="Jardín de la Abundancia"
+              width={2772}
+              height={2684}
+            />
+            <Image
+              className="h-auto w-44 opacity-75 grayscale transition duration-500 ease-out hover:scale-105 hover:opacity-100 hover:grayscale-0 sm:w-52 lg:w-56"
+              src="/madrigal.png"
+              alt="El Madrigal, Cuernavaca"
+              width={274}
+              height={184}
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-[90rem] px-6 py-32 sm:px-10 lg:px-16 lg:py-44 xl:px-20">
         <div className="mb-16 max-w-3xl">
           <p className="text-xs uppercase tracking-[0.32em] text-[#6f7b5d]">
@@ -226,6 +274,23 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <a
+        className="whatsapp-float fixed right-5 bottom-5 z-50 inline-flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_16px_34px_rgba(24,21,18,0.22)] transition duration-300 ease-out hover:scale-105 hover:shadow-[0_20px_42px_rgba(37,211,102,0.28)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#25D366] sm:right-8 sm:bottom-8 sm:size-16"
+        href="https://wa.me/525579261990"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+      >
+        <svg
+          aria-hidden="true"
+          className="size-7 sm:size-8"
+          fill="currentColor"
+          viewBox="0 0 32 32"
+        >
+          <path d="M16.02 3.2c-7.02 0-12.73 5.68-12.73 12.66 0 2.24.59 4.42 1.7 6.35L3.2 28.8l6.78-1.77a12.8 12.8 0 0 0 6.04 1.53c7.02 0 12.73-5.68 12.73-12.66S23.04 3.2 16.02 3.2Zm0 23.2c-1.92 0-3.8-.51-5.43-1.49l-.39-.23-4.02 1.05 1.07-3.9-.25-.4a10.43 10.43 0 0 1-1.59-5.53c0-5.78 4.76-10.49 10.61-10.49s10.61 4.7 10.61 10.49-4.76 10.5-10.61 10.5Zm5.82-7.86c-.32-.16-1.88-.92-2.17-1.03-.29-.1-.5-.16-.72.16-.21.31-.82 1.03-1.01 1.24-.18.21-.37.23-.69.08-.32-.16-1.35-.49-2.57-1.57-.95-.84-1.59-1.88-1.78-2.2-.18-.31-.02-.48.14-.64.14-.14.32-.37.48-.55.16-.18.21-.31.32-.52.11-.21.05-.39-.03-.55-.08-.16-.72-1.72-.98-2.35-.26-.62-.52-.53-.72-.54h-.61c-.21 0-.55.08-.85.39-.29.31-1.11 1.08-1.11 2.64s1.14 3.06 1.3 3.27c.16.21 2.24 3.4 5.43 4.77.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.88-.76 2.15-1.5.26-.73.26-1.36.18-1.5-.08-.13-.29-.21-.61-.37Z" />
+        </svg>
+      </a>
     </main>
   );
 }
